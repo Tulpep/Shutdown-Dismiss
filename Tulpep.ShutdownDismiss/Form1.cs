@@ -21,7 +21,7 @@ namespace Tulpep.ShutdownDismiss
             int delayMiliseconds = 1800000;
 
             var datetime = DateTime.Now.AddMilliseconds(delayMiliseconds);
-            label2.Text = label2.Text + datetime.ToString("hh:mm tt");
+            label2.Text = label2.Text + datetime.ToString("hh:mm tt") + ".";
 
             new Thread(() =>
             {
@@ -29,7 +29,7 @@ namespace Tulpep.ShutdownDismiss
                 Thread.CurrentThread.IsBackground = true;
                 Thread.Sleep(delayMiliseconds);
                 SetNumberOfDismisses(1);
-                Process.Start("shutdown", "/s /f /t 00");
+                Process.Start("shutdown.exe", "/s /f /c ShutDownDismiss /t 00");
             }).Start();
 
         }
