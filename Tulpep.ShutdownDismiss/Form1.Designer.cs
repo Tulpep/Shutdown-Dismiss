@@ -44,7 +44,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1186, 238);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Su equipo se apagará automaticamente en 30 minutos.  \r\nDe esta manera usted parti" +
+            this.label1.Text = "Su equipo se apagará automáticamente en 30 minutos.  \r\nDe esta manera usted parti" +
     "cipa activamente en el  cuidado del medio ambiente. \r\n\r\n¿Está de acuerdo  en apa" +
     "gar su equipo?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
